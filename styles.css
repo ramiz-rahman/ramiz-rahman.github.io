@@ -1,0 +1,754 @@
+/* CSS RESET */ 
+ /* http://meyerweb.com/eric/tools/css/reset/ 
+       v2.0 | 20110126
+       License: none (public domain)
+    */
+
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+      display: block;
+    }
+    body {
+      line-height: 1;
+    }
+    ol, ul {
+      list-style: none;
+    }
+    blockquote, q {
+      quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+      content: '';
+      content: none;
+    }
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+
+ 
+/* 
+  ===STYLE GUIDE=== 
+  
+  font(body-copy): Fira Sans
+  body-width: 1080px
+  measure: 720px
+  font-size: 20px
+  baseline: 30px
+  scale: 3:2 (perfect fifth)
+  primary text color: #333 (80% Black)
+  accent color: #92B6D5 (PANTONE Airy Blue)
+  
+  */
+
+
+
+/* ===Site Wide Style=== */
+
+html {
+  font-size: 20px;
+}
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 20px;
+  line-height: 1.5rem;
+  color: #333;
+  width: 100%;
+}
+
+p {
+  margin: 1.5rem;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin: 1.5rem;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+h4 {
+  font-size: 0.667rem;
+}
+
+li {
+  margin: 1rem;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #92B6D5
+}
+
+a:hover {
+  color: #5F83A2;
+}
+
+small {
+  font-size: 0.667rem;
+}
+
+blockquote {
+  margin: 1.5rem;
+  text-align: center;
+  width: 240px;
+}
+
+blockquote p {
+  margin: 0;
+  font-style: italic;
+}
+
+blockquote cite {
+  font-weight: 300;
+}
+
+article {
+  width: 720px;
+}
+
+section {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.dark {
+  width: 100%;
+  background-color: #333;
+  clear: both;
+  padding: 3rem 0;
+}
+
+.light {
+  width: 100%;
+  background-color: #FFF;
+  clear: both;
+  padding: 3rem 0;
+}
+/* ===PAGE HEADER=== */
+
+header {
+  background-image: URL("images/ramiz_rahman_header_4.jpg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-color: #FAFAFA; 
+  width: 100%;
+  height: 720px;
+  margin: 0;
+}
+
+#page_header {
+  width: 1080px;
+  margin: 0 auto;
+  padding-top: 6rem;
+  overflow: hidden;
+}
+
+#home_nav {
+  width: 720px;
+  float: left;
+  margin-left: 1.5rem;
+}
+
+#home_nav ul {
+  float: left;
+}
+
+#home_nav li {
+  float: left;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+#home_nav li:first-child {
+  margin-left: 0;
+}
+
+#home_nav a {
+  color: #333;
+  text-decoration: none;
+  padding-top: 0.5rem;
+}
+
+#home_nav a:hover {
+  border-top: 4px solid #92B6D5;
+}
+
+
+#title_box {
+  float: left;
+  width: 720px;
+}
+
+#title {
+  font-size: 7.59375rem;
+  line-height: 7.5rem;
+  margin-bottom: 0;
+}
+
+.subtitle {
+  text-transform: uppercase;
+  margin-top: 0;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+
+/* ==== ABOUT === */
+
+#about {
+  clear: both;
+}
+
+#about article {
+  float: right;
+}
+
+
+#about blockquote {
+  float: right;
+  text-align: right;
+  font-size: 1.5rem;
+  padding-top: 7.5rem;
+  line-height: 2.25rem;
+}
+
+/* === PORTFOLIO === */
+
+#portfolio {
+  clear: both;
+  overflow: hidden;
+}
+
+#portfolio h2 {
+  text-align: center;
+}
+
+#portfolio h3 {
+  font-size: 1.2rem;
+}
+
+#portfolio section {
+  padding: 3rem;
+  width:960px;
+}
+
+.project_view {
+  display: block;
+  background-image: url(images/test_your_twitch_end.png);
+  background-size: cover;
+  width: 960px;
+  height: 500px;
+}
+
+.project_view a {
+  display: block;
+  width: 960px;
+  height: 500px;
+}
+
+.project_view a:hover {
+  background-color: rgba(146, 182, 213, 0.3)
+}
+
+.portfolio_grid {
+  display: block;
+  height: 10.5rem;
+  width: 360px;
+  background-color: #AAA;
+  float: left;
+  text-align: center;
+  padding-top: 5.25rem;
+}
+
+.grey {
+  background-color: #EEE;
+}
+
+.white {
+  background-color: #FFF
+}
+
+/* === BLOG === */
+
+#blog {
+  clear: both;
+  overflow: hidden;
+}
+
+.blog_grid {
+  float: left;
+  display: block;
+  height: 10.5rem;
+  width: 360px;
+  text-align: center;
+  padding-top: 5.25rem;
+}
+
+.double {
+  width: 720px;
+  background-color: #92B6D5;
+}
+
+.red {
+  background-color: #B93A32;
+}
+
+.cedar {
+  background-color: #AD5D5D;
+}
+
+.mustard {
+  background-color: #D8AE47;
+}
+
+.clay {
+  background-color: #9E4624;
+}
+
+.bodacious {
+  background-color: #B76BA3;
+}
+
+.meadow {
+  background-color: #006E51;
+}
+
+.taupe {
+  background-color: #AF9483;
+}
+
+.riverside {
+  background-color: #4C6A92;
+}
+
+.sharkskin {
+  background-color: #838487;
+  
+}
+.seperate {
+  border-left: 4px solid #333;
+}
+
+/* === CONTACT === */
+
+/* === FOOTER === */
+
+#page_footer {
+  background: #EEE;
+  color: #333;
+  overflow: hidden;
+}
+
+.hire_me_message {
+  background: #333;
+  color: #FFF;
+  text-align: center;
+  margin: 0;
+  padding: 0.25rem;
+}
+
+.hire_me {
+  border: 2px solid #92B6D5;
+  text-decoration: none;
+  color: #92B6D5;
+  padding: 0.2rem;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+a.hire_me:hover {
+  background-color: #92B6D5;
+  color: #FFF;
+}
+
+#page_footer h3 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.social_connect {
+  float: left;
+  width: 280px;
+  padding: 0 60px;
+}
+
+.social_connect p {
+  text-transform: uppercase;
+  margin: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.social_icon_list li{
+  width: 3rem;
+  list-style: none;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#phone_number {
+  background-image: url(icons/chat.png);
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  margin-top: 3rem;
+  height: 2rem;
+}
+
+#email_address {
+  background-image: url(icons/email.png);
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  margin-top: 1rem;
+  height: 2rem;
+}
+
+#contact_form {
+  width: 480px;
+  padding: 0 99px;
+  float: right;
+  border-left: 2px solid #333;
+  margin: 0;
+}
+
+#contact_form input {
+  width: 440px;
+  padding: 0 20px;
+  height: 1.5rem;
+  font-size: 0.8rem;
+  border: 1px solid #BBB;
+  border-radius: 5px;
+  background-color: #FFF;
+  
+}
+
+#contact_form textarea {
+  width: 440px;
+  padding: 0.5rem 20px;
+  height: 4.5rem;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 0.8rem;
+  border: 1px solid #BBB;
+  border-radius: 5px;
+}
+
+
+#contact_form #submit {
+  background-color: #EEE;
+  color: #333;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+  outline: none;
+  text-transform: lowercase;
+  height: 2.5rem;
+  width: 9rem;
+  border: none;
+  border: 2px solid #333;
+  border-radius: 5px;
+}
+
+#contact_form #submit:hover {
+  background-color: #333;
+  color: #FFF;
+}
+
+.page_end {
+  width: 1080px;
+  background: #333;
+  color: #FFF;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* === RESUME === */
+
+/* ```Main Nav``` */
+#main_nav {
+  background-color: #333;
+  color: #FFF;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+#main_nav ul {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+#main_nav li {
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+#main_nav a {
+  color: #FFF;
+  display: block;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+#main_nav a:hover {
+  background-color: #FFF;
+  color: #333;
+}
+
+#main_nav a.active_nav {
+  background: #FFF;
+  color: #333;
+  pointer-events: none;
+}
+
+.stickyfix {
+  margin-top: 3.5rem;
+}
+
+/* ```Global Classes``` */
+
+.resume_section {
+  
+}
+
+.resume_section h2 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-size: 2.25rem;
+  padding-top: 1rem;
+}
+
+.resume_section p:first-of-type {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 0;
+  width: 720px;
+  font-weight: 300;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #555;
+}
+
+.resume_section h3 {
+  text-align: left;
+  margin-left: 0;
+  margin-bottom: 0;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+}
+
+.circle_full {
+  background-color: #92B6D5 ;
+  display: inline-block;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  float: right;
+  margin-left: 0.1rem;
+}
+.circle_empty {
+  display: inline-block;
+  border: 0.1rem solid #92B6D5;
+  border-radius: 50%;
+  width: 0.8rem;
+  height: 0.8rem;
+  float: right;
+  margin-left: 0.1rem;
+}
+
+.rateable {
+  float: left;
+  width: 500px;
+  margin-right: 40px;
+}
+
+.light_grey {
+  background-color: #EEE;
+  width: 100%;
+  overflow: hidden;
+}
+
+.dark_grey {
+  background-color: #DDD;
+  width: 100%;
+  overflow: hidden;
+}
+/* ```Resume Introduction``` */
+#resume_introduction {
+  overflow: hidden;
+  height: 30rem;
+}
+
+#resume_introduction ul {
+  width: 300px;
+  float: left;
+  margin-top: 5rem;
+  font-weight: 700;
+}
+
+#profile_pic {
+  border-radius: 50%;
+  float: left;
+  margin-top: 2.5rem;
+}
+
+#profile_text {
+  float: left;
+  width: 350px;
+}
+
+/* ```Resume Abilities``` */
+#resume_abilities {
+  overflow: hidden;
+}
+
+/* ```Resume Experience``` */
+#resume_experiences {
+  overflow: hidden;
+}
+
+/*#resume_experiences .clearfix {
+  background: #EEE;
+}*/
+
+.employer_name {
+  width: 300px;
+  float: left;
+  padding: 30px;
+}
+
+.employer_name p {
+  margin: 0;
+}
+
+.employer_description {
+  width: 660px;
+  padding: 30px;
+  float: right;
+} 
+
+.employer_description h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.employer_name p:first-of-type{
+  font-size: 1rem;
+  font-weight: 700;
+  font-style: normal;
+  border: none;
+  text-align: left;
+  width: 1080px;
+  color: #333;
+  margin-bottom: 0;
+}
+
+.employer_description p:first-of-type{
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+  border: none;
+  width: 660px;
+  text-align: left;
+  color: #333;
+  margin: 0;
+}
+
+/* ```Resume Courses``` */
+
+#resume_course_list .rateable img {
+}
+
+/* ```Resume Books``` */
+
+/* === ABOUT MAIN === */
+
+#about_main {
+  margin: 0 auto;
+  margin-top: 3.5rem;
+}
+
+#about_main h1 {
+  padding-top: 2.5rem;
+}
+
+/* === PORTFOLIO MAIN === */
+
+#portfolio_showcase {
+  padding-top: 2.5rem;
+  overflow: hidden;
+}
+
+#portfolio_showcase h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#portfolio_showcase figure {
+  width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  background-color: #CCC;
+}
+
+#portfolio_showcase figcaption {
+  text-align: center;
+  font-size: 0.667rem;
+}
+
+.subheader {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #555;
+}
