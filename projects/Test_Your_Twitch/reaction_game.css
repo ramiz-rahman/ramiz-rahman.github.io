@@ -1,0 +1,88 @@
+html {
+    font-size: 18px;
+    line-height: 30px;
+    background-image: url(background.jpg);
+    background-size: cover;
+    height: 100%;
+}
+
+body {
+    width: 960px;
+    margin: 0 auto;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 1 rem;
+    min-height: 100%;
+    display: flex;
+    position: relative;
+}
+
+
+.flex {
+    flex: 1;
+}
+
+header {
+    text-align: center;
+    color: #F8F5F2;
+    overflow: hidden;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 4.236rem;
+}
+
+#command {
+    float: left;
+    width: 450px;
+    padding: 10px;
+    background-color: rgba(255,255,255,0.15);
+    color: #F8F5F2;
+}
+
+#start {
+    height: 75px;
+    width: 150px;
+    border-radius: 10px;
+    border: 2px solid #EDB83D;
+    background-color: #F8F5F2;
+    color: #EDB83D;
+    text-transform: uppercase;
+    font-weight: 500;  
+    font-size: 1.618rem;
+    margin-left: 150px;
+}
+
+#start:hover {
+    background-color: #EDB83D;
+    color: #F8F5F2;
+}
+
+#playground {
+    height: 450px;
+    width: 450px;
+    float: right;
+    border: 10px solid #000B29;
+    background-color: #F8F5F2;
+}
+
+#object {
+    height:150px;
+    width: 150px;
+    background-color: blue;
+    display: none;
+    position: relative;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    text-align: center;
+    padding: 1px;
+    background-color: #000B29;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "utf-8">
+        <title>Test your reaction speed!</title>
+        <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:400,500,800' rel='stylesheet' type='text/css'>
+        <link href = "reaction_game.css" rel = "stylesheet" type = "text/css">
+    </head>
+    
+    <body>
+        <div class = "flex">
+        <header>
+            <h1>Test Your Twitch</h1>
+        </header>
+        <section id = "command">
+            <p>Click on the objects in the left hand area as fast as you can. You only have 10 clicks to prove your legendary twitch reflexes!</p>
+            <button id = "start" value = "start">Start</button>
+            <p>Last reaction time: <span id = "time"></span></p>
+            <p>Turn: <span id = "gameCount">0</span></p>
+            <hr>
+            <p>Avg: <span id = "avg">0</span>s</p>
+            <p>Best: <span id = "best">0</span>s</p>
+            <p>Worst: <span id = "worst">0</span>s</p>
+        </section>
+        <section id = "playground">
+            <div id = "object"></div>
+        </section>
+        <footer>
+            <p>&copy;Copyright 2016, Ramiz Rahman </p>
+        </footer>
+        </div>
+        
+        <script src = "script.js" type = "text/javascript"></script>
+    </body>
+</html>
